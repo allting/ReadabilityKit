@@ -31,14 +31,14 @@ class ViewController: NSViewController {
 	@IBOutlet var urlField: NSTextField?
 	@IBOutlet var resultView: NSTextView?
 
-	@IBAction func onGo(sender: NSControl) {
+	@IBAction func onGo(_ sender: NSControl) {
 		resultView?.string = ""
 
 		guard let urlStr = urlField?.stringValue else {
 			return
 		}
 
-		guard let url = NSURL(string: urlStr) else {
+		guard let url = URL(string: urlStr) else {
 			return
 		}
 

@@ -7,14 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F732D2C1DD97796009D0BD5 /* Ji.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F732D2B1DD97796009D0BD5 /* Ji.framework */; };
 		57156D6C1D632640008A9C49 /* Readability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57156D6A1D632640008A9C49 /* Readability.swift */; };
 		57156D6F1D6326BD008A9C49 /* ReadabilityKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 57156D6E1D6326BD008A9C49 /* ReadabilityKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57156D811D633264008A9C49 /* ReadabilityKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 57156D6E1D6326BD008A9C49 /* ReadabilityKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		57156E8F1D6334A1008A9C49 /* Ji.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57156E8D1D6334A0008A9C49 /* Ji.framework */; };
-		57156E901D6334A8008A9C49 /* Ji.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57156E8B1D6334A0008A9C49 /* Ji.framework */; };
-		57156EA01D633726008A9C49 /* Ji.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57156E9F1D633726008A9C49 /* Ji.framework */; };
 		57156EA11D63377A008A9C49 /* ReadabilityKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 57156D6E1D6326BD008A9C49 /* ReadabilityKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		57156ED11D63399D008A9C49 /* Ji.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57156ED01D63399D008A9C49 /* Ji.framework */; };
 		57156ED21D634087008A9C49 /* ReadabilityKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 57156D6E1D6326BD008A9C49 /* ReadabilityKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57156F051D63493B008A9C49 /* ReadabilityKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57156F041D63493B008A9C49 /* ReadabilityKitTests.swift */; };
 		57156F071D63493B008A9C49 /* ReadabilityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57156D5D1D632539008A9C49 /* ReadabilityKit.framework */; };
@@ -30,10 +27,6 @@
 		57156F291D634982008A9C49 /* PagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57156F1C1D634982008A9C49 /* PagesTests.swift */; };
 		57156F2A1D634982008A9C49 /* TitleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57156F1D1D634982008A9C49 /* TitleTests.swift */; };
 		57156F2B1D634982008A9C49 /* VideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57156F1E1D634982008A9C49 /* VideoTests.swift */; };
-		57156F2E1D634F0E008A9C49 /* Ji.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57156E8B1D6334A0008A9C49 /* Ji.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		57156F301D6350A3008A9C49 /* Ji.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57156E8D1D6334A0008A9C49 /* Ji.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		57156F321D6350BB008A9C49 /* Ji.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57156E9F1D633726008A9C49 /* Ji.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		57156F341D6350D6008A9C49 /* Ji.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57156ED01D63399D008A9C49 /* Ji.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		57185B6E1D7D7CF700C76FAD /* Readability+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57185B6D1D7D7CF700C76FAD /* Readability+Networking.swift */; };
 		57185B6F1D7D7CF700C76FAD /* Readability+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57185B6D1D7D7CF700C76FAD /* Readability+Networking.swift */; };
 		57185B701D7D7CF700C76FAD /* Readability+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57185B6D1D7D7CF700C76FAD /* Readability+Networking.swift */; };
@@ -72,7 +65,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				57156F2E1D634F0E008A9C49 /* Ji.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +74,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				57156F301D6350A3008A9C49 /* Ji.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +83,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				57156F321D6350BB008A9C49 /* Ji.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,24 +92,20 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				57156F341D6350D6008A9C49 /* Ji.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F732D2B1DD97796009D0BD5 /* Ji.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ji.framework; path = Carthage/Build/Mac/Ji.framework; sourceTree = "<group>"; };
 		57156D5D1D632539008A9C49 /* ReadabilityKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReadabilityKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57156D691D632640008A9C49 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57156D6A1D632640008A9C49 /* Readability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Readability.swift; sourceTree = "<group>"; };
 		57156D6E1D6326BD008A9C49 /* ReadabilityKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadabilityKit.h; sourceTree = "<group>"; };
 		57156D771D6331A0008A9C49 /* ReadabilityKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReadabilityKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		57156E8B1D6334A0008A9C49 /* Ji.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Ji.framework; sourceTree = "<group>"; };
-		57156E8D1D6334A0008A9C49 /* Ji.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Ji.framework; sourceTree = "<group>"; };
 		57156E961D633706008A9C49 /* ReadabilityKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReadabilityKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		57156E9F1D633726008A9C49 /* Ji.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Ji.framework; sourceTree = "<group>"; };
 		57156EC71D63395E008A9C49 /* ReadabilityKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReadabilityKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		57156ED01D63399D008A9C49 /* Ji.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Ji.framework; sourceTree = "<group>"; };
 		57156F021D63493B008A9C49 /* ReadabilityKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadabilityKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57156F041D63493B008A9C49 /* ReadabilityKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadabilityKitTests.swift; sourceTree = "<group>"; };
 		57156F061D63493B008A9C49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -146,7 +132,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57156E901D6334A8008A9C49 /* Ji.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +139,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57156E8F1D6334A1008A9C49 /* Ji.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57156EA01D633726008A9C49 /* Ji.framework in Frameworks */,
+				0F732D2C1DD97796009D0BD5 /* Ji.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +154,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57156ED11D63399D008A9C49 /* Ji.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,15 +168,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F732D2A1DD97796009D0BD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F732D2B1DD97796009D0BD5 /* Ji.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		57156D531D632539008A9C49 = {
 			isa = PBXGroup;
 			children = (
 				57156F0F1D634982008A9C49 /* Tests */,
-				57156E891D6334A0008A9C49 /* Dependencies */,
 				57156D6D1D6326BD008A9C49 /* Headers */,
 				57156D681D632640008A9C49 /* Sources */,
 				57156F031D63493B008A9C49 /* ReadabilityKitTests */,
 				57156D5E1D632539008A9C49 /* Products */,
+				0F732D2A1DD97796009D0BD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -228,49 +219,6 @@
 				57156D6E1D6326BD008A9C49 /* ReadabilityKit.h */,
 			);
 			path = Headers;
-			sourceTree = "<group>";
-		};
-		57156E891D6334A0008A9C49 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				57156ECF1D63399D008A9C49 /* tvOS */,
-				57156E9E1D633725008A9C49 /* macOS */,
-				57156E8A1D6334A0008A9C49 /* iOS */,
-				57156E8C1D6334A0008A9C49 /* watchOS */,
-			);
-			path = Dependencies;
-			sourceTree = "<group>";
-		};
-		57156E8A1D6334A0008A9C49 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				57156E8B1D6334A0008A9C49 /* Ji.framework */,
-			);
-			path = iOS;
-			sourceTree = "<group>";
-		};
-		57156E8C1D6334A0008A9C49 /* watchOS */ = {
-			isa = PBXGroup;
-			children = (
-				57156E8D1D6334A0008A9C49 /* Ji.framework */,
-			);
-			path = watchOS;
-			sourceTree = "<group>";
-		};
-		57156E9E1D633725008A9C49 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				57156E9F1D633726008A9C49 /* Ji.framework */,
-			);
-			path = macOS;
-			sourceTree = "<group>";
-		};
-		57156ECF1D63399D008A9C49 /* tvOS */ = {
-			isa = PBXGroup;
-			children = (
-				57156ED01D63399D008A9C49 /* Ji.framework */,
-			);
-			path = tvOS;
 			sourceTree = "<group>";
 		};
 		57156F031D63493B008A9C49 /* ReadabilityKitTests */ = {
@@ -839,6 +787,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Dependencies/macOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Sources/Info.plist;
@@ -867,6 +816,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Dependencies/macOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Sources/Info.plist;
