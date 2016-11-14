@@ -32,8 +32,7 @@
 let readabilityUserAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7"
 
 public extension Readability {
-
-	public class func parse(url: URL, completion: @escaping (ReadabilityData?) -> ()) {
+    class func parse(url: URL, completion: @escaping ( ReadabilityData?) -> ()) {
 
 		let isMainThread = Thread.isMainThread
 
@@ -58,11 +57,11 @@ public extension Readability {
 
 				if Readability.checkForImage(htmlData) {
 					let parsedData = ReadabilityData(title: url.absoluteString,
-						description: .none,
+						pageDescription: "",
 						topImage: url.absoluteString,
-						text: .none,
-						topVideo: .none,
-						keywords: .none)
+						text: "",
+						topVideo: "",
+						keywords: [""])
 
 					if isMainThread {
 						DispatchQueue.main.async(execute: {

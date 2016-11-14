@@ -31,22 +31,30 @@ class ViewController: NSViewController {
 	@IBOutlet var urlField: NSTextField?
 	@IBOutlet var resultView: NSTextView?
 
-	@IBAction func onGo(sender: NSControl) {
+	@IBAction func onGo(_ sender: NSControl) {
 		resultView?.string = ""
 
 		guard let urlStr = urlField?.stringValue else {
 			return
 		}
 
-		guard let url = NSURL(string: urlStr) else {
+		guard let url = URL(string: urlStr) else {
 			return
 		}
 
-		let parser = Readability(url: url)
-		let title = parser.title() ?? "Not found"
-		let desc = parser.description() ?? "Not found"
-		let imageUrl = parser.topImage() ?? "Not found"
-		resultView?.string = "TITLE: \(title)\nDESC:\(desc)\nIMAGE:\(imageUrl)"
+        Readability.parse(url: url) { data in
+            print( "title:\(data?.title)")
+            print( "desc:\(data?.description)")
+            print( "keywords:\(data?.keywords)")
+            
+            let title = data?.title ?? "Not found"
+            let desc = data?.description ?? "Not found"
+            let imageUrl = data?.topImage ?? "Not found"
+            let videoUrl = data?.topVideo ?? "Not found"
+            let text = data?.text
+            
+            self.resultView?.string = "TITLE: \(title)\nDESC:\(desc)\nIMAGE:\(imageUrl)\nVIDEO:\(videoUrl)\n\n\n\(text)"
+        }
 	}
 }
 

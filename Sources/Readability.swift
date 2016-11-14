@@ -25,16 +25,25 @@
 
 import Ji
 
-public struct ReadabilityData {
-	public let title: String
-	public let description: String?
-	public let topImage: String?
-	public let text: String?
-	public let topVideo: String?
-	public let keywords: [String]?
+@objc open class ReadabilityData : NSObject {
+	public var title: String?
+	public var pageDescription: String?
+	public var topImage: String?
+	public var text: String?
+	public var topVideo: String?
+	public var keywords: [String]?
+    
+    init(title: String?, pageDescription: String?, topImage: String?, text: String?, topVideo: String?, keywords: [String]?){
+        self.title = title
+        self.pageDescription = pageDescription
+        self.topImage = topImage
+        self.text = text
+        self.topVideo = topVideo
+        self.keywords = keywords
+    }
 }
 
-open class Readability {
+@objc open class Readability : NSObject {
 
 	// Queries in order of priority
 
@@ -497,7 +506,7 @@ open class Readability {
 
 		let parsedData = ReadabilityData(
 			title: title,
-			description: self.description(),
+			pageDescription: self.pageDescription(),
 			topImage: self.topImage(),
 			text: self.text(),
 			topVideo: self.topVideo(),
@@ -593,7 +602,7 @@ open class Readability {
 		return .none
 	}
 
-	func description() -> String?
+	func pageDescription() -> String?
 	{
 		if let document = document {
 			if let description = extractValueUsing(document, queries: descQueries) {
